@@ -4,7 +4,7 @@ function setInputValue(el, val) {
   setter.call(el, val);
   el.dispatchEvent(new Event('input', { bubbles: true }));
 }
-setInputValue(document.querySelector('#user-name'), 'standard_user');
+setInputValue(document.querySelector('#user-name'), 'problem_user');
 setInputValue(document.querySelector('#password'), 'secret_sauce');
 document.querySelector('#login-button').click();
 
